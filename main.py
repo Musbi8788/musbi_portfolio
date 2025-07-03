@@ -3,7 +3,7 @@ import smtplib
 import os
 
 
-my_email = os.environ.get("YOUR_EMAIL")
+my_email = os.environ.get("EMAIL")
 password = os.environ.get("PASSWORD")
 print(my_email, password)
 
