@@ -40,8 +40,8 @@ def send_email(name, email, phone, message):
 
     with smtplib.SMTP("smtp.gmail.com", 587) as server:
         server.starttls()
-        server.login(my_email, password)
-        server.sendmail(from_addr=my_email, to_addrs=email, msg=send_message)
+        server.login(my_email, password) # type:ignore
+        server.sendmail(from_addr=my_email, to_addrs=email, msg=send_message) # type:ignore
 
 
 if __name__ == "__main__":
